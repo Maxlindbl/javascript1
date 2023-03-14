@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 3</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+    let nro_1 = prompt("anna eka luku");
+    let nro_2 = prompt("anna toinen luku");
+    let nro_3 = prompt("anna kolmas luku");
+
+    nro_1 = parseInt(nro_1);
+    nro_2 = parseInt(nro_2);
+    nro_3 = parseInt(nro_3);
+
+    let sum = nro_3 + nro_2 + nro_1;
+    let tulo = nro_3 * nro_2 * nro_1;
+    let average = sum / 3;
+
+    document.querySelector('#target').innerHTML = "lukujen summa on " + sum + " lukujen tulo on "
+        + tulo + " lukujen keskiarvo on " + average;
+</script>
+</body>
+</html>
