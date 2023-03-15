@@ -1,16 +1,49 @@
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #fec833;
   font-family: Arial;
+  margin-left: 42px;
+  margin-right: 42px;
 }
+
 .navbar a {
-  float: left;
+  float: right;
   font-size: 16px;
-  color: white;
+  color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 14px;
+  margin-right: 14px;
   text-decoration: none;
+
 }
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.navbar a:hover, .dropdown:hover {
+  background-color: #e2bd70;
+}
+
+
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dcdacf;
+  z-index: -1;
+}
+.background2 {
+  position:fixed ;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 150px;
+  background-image:linear-gradient(rgba(220, 218, 207, 0), rgb(220, 218, 207)),url("https://img.freepik.com/free-vector/premium-gray-background-with-golden-lines_1017-27821.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+
+
 }
