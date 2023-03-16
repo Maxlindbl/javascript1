@@ -29,19 +29,30 @@
 
 header{
   background-color:#fec833 ;
-  margin-left: 42px;
-  margin-right: 42px;
+  position: fixed;
+  top: 0px;
+  right: 50px;
+  left: 50px;
+
 }
 
 nav{
   float: right;
 
-  
+}
+.logo_image{
+    width: 50px;
+    overflow: hidden;
+  margin-bottom: -24px;
 }
 a{
   text-decoration: none;
   color: black;
-  padding: 40px;
+  padding: 16px 14px;
+margin-right: 0px;
+position: relative;
+  top: -16px;
+
 
 }
 a:hover{
@@ -51,6 +62,9 @@ a:hover{
 
 main{
   padding: 60px;
+  position: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .background {
@@ -63,8 +77,8 @@ main{
   z-index: -1;
 }
 .background2 {
-  position:fixed ;
-  top: 50px;
+  position: fixed ;
+  top: 49px;
   left: 50px;
   right: 50px;
   bottom: 150px;
