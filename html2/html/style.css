@@ -1,4 +1,4 @@
-maxl.navbar {
+/*maxl.navbar {
   overflow: auto;
   background-color: #fec833;
   font-family: 'Courier New', Courier, monospace;
@@ -21,9 +21,37 @@ maxl.navbar {
 .navbar a:hover, .dropdown:hover {
   background-color: #e2bd70;
 }
+*/
+.container {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 0, 0);
+}
 
+header{
+  background-color:#fec833 ;
+  margin-left: 42px;
+  margin-right: 42px;
+}
 
+nav{
+  float: right;
 
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 40px;
+
+}
+a:hover{
+  background-color: #c00000;
+  
+}
+
+main{
+  padding: 60px;
+}
 
 .background {
   position: fixed;
@@ -48,11 +76,3 @@ maxl.navbar {
 
 }
 
-p{
-  font-family: 'Courier New', Courier, monospace;
-  padding: 60px;
-}
-
-h1{
-  font-family: 'Courier New', Courier, monospace;
-}
