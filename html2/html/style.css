@@ -72,8 +72,8 @@ main{
 }
 
 p{
-padding-left: 250px;
-  padding-right: 250px;
+padding-left: 10%;
+  padding-right: 10%;
 }
 
 .center{
@@ -93,12 +93,12 @@ display: block;
   margin-right: auto;
   margin-left: auto;
   width: 90%;
-  height: 400px;
+  height: 80%;
 }
 
 #products p{
-  padding-right: 65px;
-  padding-left: 65px;
+  padding-right: 5%;
+  padding-left: 5%;
 
 }
 
@@ -114,7 +114,7 @@ display: block;
 .flex-container > div {
   background-color: #e2bd70;
 
-  margin: 10px;
+  margin: 2rem;
   padding: 10px;
   font-size: 30px;
   width: 24%;
@@ -124,6 +124,14 @@ display: block;
 
 }
 
+#contact h1{
+  padding-left: 10rem;
+}
+#contact iframe{
+position: relative;
+margin-left: 40rem;
+margin-right: 10rem;
+}
 .background {
   position: fixed;
   top: 0;
