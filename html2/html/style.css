@@ -70,7 +70,10 @@ main{
   margin-top: 450px;
   margin-bottom: 450px;
 }
-
+h1{
+  margin: auto;
+  width: 20%;
+}
 p{
 padding-left: 10%;
   padding-right: 10%;
