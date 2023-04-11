@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a program that asks the user for the number of participants. After this, the program asks for the names of all participants. Finally, the program prints the names of the participants on the web page in an ordered list (<ol>) in alphabetical order.
+        let participants = prompt("how many participants?");
+        let names = [];
+        for (let i = 0; i < participants; i++) {
+            names[i] = prompt("enter a name");
+        }
+        names.sort();
+        document.write("<ol>");
+        for (let i = 0; i < names.length; i++) {
+            document.write("<li>" + names[i] + "</li>");
+        }
+        document.write("</ol>");
+        
+    </script>
+</body>
+</html>

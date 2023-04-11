@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a program that prompts the user for numbers. When the user enters one of the numbers he previously entered, the program will announce that the number has already been given and stops its operation and then prints all the given numbers to the console in ascending order.
+        let numbers = [];
+        let i = 0;
+        while (true) {
+            numbers[i] = prompt("enter a number");
+            for (let j = 0; j < numbers.length - 1; j++) {
+                if (numbers[i] == numbers[j]) {
+                    console.log("number already given");
+                    numbers.sort();
+                    for (let k = 0; k < numbers.length; k++) {
+                        console.log(numbers[k]);
+                    }
+                    break;
+                }
+            }
+            i++;
+        }
+
+        
+    </script>
+</body>
+</html>

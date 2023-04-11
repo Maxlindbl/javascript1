@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Modify the function above so that it gets the number of sides on the dice as a parameter. With the modified function you can for example roll a 21-sided role-playing dice. The difference to the last exercise is that the dice rolling in the main program continues until the program gets the maximum number on the dice, which is asked from the user at the beginning.
+        function diceRoll(sides) {
+            return Math.floor(Math.random() * sides) + 1;
+        }
+        let diceSides = prompt("How many sides does the dice have?");
+        let diceRollResult = diceRoll(diceSides);
+        document.write("<ul>");
+        while (diceRollResult !== diceSides) {
+            document.write("<li>" + diceRollResult + "</li>");
+            diceRollResult = diceRoll(diceSides);
+        }
+        document.write("<li>" + diceRollResult + "</li>");
+        document.write("</ul>");
+        
+    </script>
+</body>
+</html>
