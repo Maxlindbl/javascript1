@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a voting program as described below for small-scale meeting use. The program asks for the number of candidates. Then the program asks for the names of the candidates: 'Name for candidate 1 Store the candidates' names and initial vote count in objects like this: The program asks for the number of voters. The program asks each voter in turn who they will vote for. Voter shoud enter candidate name. If the voter enters an empty value instead of the voting number, it will be interpreted as an empty vote. The program announces the name of the winner and the results by printing it to the console:
+        let candidates = [];
+        let candidateNames = [];
+        let candidateVotes = [];
+        let candidateObjects = [];
+        let candidateCount = prompt("how many candidates?");
+        for (let i = 0; i < candidateCount; i++) {
+            candidates[i] = prompt("enter a candidate name");
+            candidateNames[i] = candidates[i];
+            candidateVotes[i] = 0;
+            candidateObjects[i] = {name: candidateNames[i], votes: candidateVotes[i]};
+        }
+        let voterCount = prompt("how many voters?");
+        for (let i = 0; i < voterCount; i++) {
+            let vote = prompt("who do you vote for?");
+            for (let j = 0; j < candidateCount; j++) {
+                if (vote == candidateObjects[j].name) {
+                    candidateObjects[j].votes++;
+                }
+            }
+        }
+        candidateObjects.sort(function(a, b) {
+            return b.votes - a.votes;
+        });
+        console.log("The winner is " + candidateObjects[0].name + " with " + candidateObjects[0].votes + " votes.");
+        for (let i = 0; i < candidateCount; i++) {
+            console.log(candidateObjects[i].name + ": " + candidateObjects[i].votes);
+        }
+        
+    </script>
+</body>
+</html>
